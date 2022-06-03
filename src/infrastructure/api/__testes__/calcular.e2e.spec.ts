@@ -2,7 +2,7 @@ import { app } from "../express";
 import request from "supertest";
 
 describe("E2E test for calcular", () => {
-  it("", async () => {
+  it("Validate the route calculate passing the correct information", async () => {
     const response = await request(app).post("/calcular").send({
       numero: 10,
     });
