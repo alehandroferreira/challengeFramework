@@ -19,8 +19,8 @@ Divisores Primos: 1 3 5
 
 ### Orientações para testar a aplicação:
 1 - Clonar o repositorio
-2 - Ter o o dorcker instalado na maquina
+2 - Ter o dorcker instalado na maquina
 3 - Rodar o comando da raiz do projeto "docker-compose up --build"
-4 - Após rodar o comando da linha 22, rodar a aplicação com o comando "docker-compose exec app bash" para ter acesso a imagem docker
-5 - Para rodar a aplicação, deve-se rodar o comando "yarn dev" após o comando da linha 23 e acessar "http://localhost:8080/calcular" passando {"numero": numero desejado} no body
-6 - Para testar a aplicação, deve-se rodar o comando "yarn test" após o comando da linha 23
+4 - Rodar a aplicação com o comando "docker-compose exec app bash" para ter acesso a imagem docker
+5 - Para rodar a aplicação, deve-se rodar o comando "yarn dev" após o comando "docker-compose up --build" e acessar "http://localhost:8080/calcular" passando {"numero": numero desejado} no body
+6 - Para testar a aplicação, deve-se rodar o comando "yarn test" após o comando "docker-compose exec app bash"
